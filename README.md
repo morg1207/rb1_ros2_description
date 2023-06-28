@@ -16,7 +16,7 @@
                     command:            git clone -r https://github.com/morg1207/checkpoint8.git
 
             - STEP3: Build package
-                    command:            cd ~/ros2_ws/src
+                    command:            cd ~/ros2_ws
                                         colcon build 
                                         source ~/ros2_ws/install/setup.bash
 
@@ -29,7 +29,7 @@
     Note: The simulation takes about 1 min to start, so wait for it to start.
 
 ##  Controller activation
-    The following steps must be followed to activate the controllers:
+    The following steps must be followed to activate the controller for elevator:
             -STEP 1 : Execute the following command
             
                     command :            ros2 control load_controller --set-state start elevator_effort_controller
